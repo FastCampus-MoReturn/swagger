@@ -1,7 +1,7 @@
 package com.fastcampus.swagger.controller;
 
-import com.fastcampus.finalprojectbeswagger.dto.*;
-import com.fastcampus.finalprojectbeswagger.global.response.ResponseDTO;
+import com.fastcampus.swagger.dto.*;
+import com.fastcampus.swagger.global.response.ResponseDTO;
 import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

@@ -1,6 +1,6 @@
 package com.fastcampus.swagger.controller;
 
-import com.fastcampus.finalprojectbeswagger.dto.PdfParsingResDTO;
+import com.fastcampus.swagger.dto.PdfParsingResDTO;
 import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

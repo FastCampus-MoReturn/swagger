@@ -1,7 +1,7 @@
 package com.fastcampus.swagger.controller;
 
-import com.fastcampus.finalprojectbeswagger.dto.TradingDetailResDTO;
-import com.fastcampus.finalprojectbeswagger.dto.TradingPriceIndexResDTO;
+import com.fastcampus.swagger.dto.TradingDetailResDTO;
+import com.fastcampus.swagger.dto.TradingPriceIndexResDTO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
 import io.swagger.v3.oas.annotations.Operation;
