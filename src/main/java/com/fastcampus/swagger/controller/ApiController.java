@@ -24,7 +24,7 @@ public class ApiController {
             @ApiResponse(responseCode = "404", description = "잘못된 접근"),
             @ApiResponse(responseCode = "500", description = "API 서버에러")
     })
-    @GetMapping("/tradingPriceIndex/{regionCode}/{contractType}/{researchDate}")  //주간아파트 가격 동향 지수
+    @GetMapping("api/tradingPriceIndex/{regionCode}/{contractType}/{researchDate}")  //주간아파트 가격 동향 지수
     public TradingPriceIndexResDTO tradingPriceIndex(
             @PathVariable("regionCode")
             @ApiParam(value = "수도권 A2000, 서울 11000", required = true) String regionCode, // (수도권 A2000, 서울 11000)
@@ -45,7 +45,7 @@ public class ApiController {
             @ApiResponse(responseCode = "404", description = "잘못된 접근"),
             @ApiResponse(responseCode = "500", description = "API 서버에러")
     })
-    @GetMapping("/tradingdetail")  //부동산 실거래 상세 자료
+    @GetMapping("api/tradingdetail")  //부동산 실거래 상세 자료
     public TradingDetailResDTO tradingDetail(
             @RequestBody
             @ApiParam(value = "등기부 등본의 adrress 값을 입력해주세요.", required = true) String address) {
