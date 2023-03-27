@@ -29,7 +29,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
         return new Docket(DocumentationType.OAS_30) // 3.0 문서버전으로 세팅
                 .groupName("파이널 프로젝트 1조")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.fastcampus.finalprojectbeswagger"))
+                .apis(RequestHandlerSelectors.basePackage("com.fastcampus.swagger"))
 //                .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build()
