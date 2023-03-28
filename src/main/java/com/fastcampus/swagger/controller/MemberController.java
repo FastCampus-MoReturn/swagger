@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.web.bind.annotation.*;
 
 @Api(tags = "회원정보 서비스")
-@RestController
+//@RestController
 public class MemberController {
     @Operation(summary = "회원가입 (토큰 X)", description = "정보를 입력받아 회원가입을 진행 및 DB에 저장")
     @ApiResponses({
