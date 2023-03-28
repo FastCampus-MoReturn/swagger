@@ -1,5 +1,6 @@
 package com.fastcampus.swagger.controller;
 
+import com.fastcampus.swagger.dto.AddressReqDTO;
 import com.fastcampus.swagger.dto.TradingDetailResDTO;
 import com.fastcampus.swagger.dto.TradingPriceIndexResDTO;
 import io.swagger.annotations.Api;
@@ -46,9 +47,7 @@ public class ApiController {
             @ApiResponse(responseCode = "500", description = "API 서버에러")
     })
     @GetMapping("api/tradingdetail")  //부동산 실거래 상세 자료
-    public TradingDetailResDTO tradingDetail(
-            @RequestBody
-            @ApiParam(value = "등기부 등본의 adrress 값을 입력해주세요.", required = true) String address) {
+    public TradingDetailResDTO tradingDetail(@RequestBody AddressReqDTO addressReqDTO) {
         return new TradingDetailResDTO();
     }
 
