@@ -44,9 +44,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("HolyMoly")
-                .description("(토큰 O) 는 header에 Authorization Bearer: \"accessToken\"필요"+"<br>"+
-                        "{<br>" +
-                        "  \"code\": 0,<br>" +
+                .description("\"code\": 0,<br>" +
                         "  \"message\": \"string\"<br>" +
                         "  \"data\": {},<br>" +
                         "  }"+"<br>" +"모든 반환 값은 기본양식의 data에 담겨서 반환됩니다.")
