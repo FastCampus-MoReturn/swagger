@@ -14,9 +14,9 @@ import springfox.documentation.annotations.ApiIgnore;
 
 @Api(tags = "PDF 파싱 서비스")
 @RestController
-public class PdfToJasonController {
+public class PdfParsingController {
 
-    @Operation(summary = "PDF 파싱 (토큰 O)", description = "encType=\"multipart/form-data input type=\"file\" 업로드 ")
+    @Operation(summary = "PDF 파싱", description = "encType=\"multipart/form-data input type=\"file\" 업로드 ")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "성공"),
             @ApiResponse(responseCode = "400", description = "PDF 파일이 아님"),
