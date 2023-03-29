@@ -44,9 +44,10 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("HolyMoly")
-                .description("\"code\": 0,<br>" +
+                .description("{<br>" +
+                        "\"code\": HttpCode,<br>" +
                         "  \"message\": \"string\"<br>" +
-                        "  \"data\": {},<br>" +
+                        "  \"data\": {   },<br>" +
                         "  }"+"<br>" +"모든 반환 값은 기본양식의 data에 담겨서 반환됩니다.")
 //                .contact(new Contact("이름","홈페이지","email"))
 //                .license("라이센스소유자")
